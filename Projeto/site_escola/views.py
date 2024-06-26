@@ -4,12 +4,12 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return render(request, 'site_escola/pages/home.html')
+    return render(request, 'site_escola/pages/site.html')
 
 
-def contato(request):
-    return HttpResponse('contato')
+def melhorias(request):
+    return HttpResponse('site_escola/pages/pagina_melhoria.html')
  
 
-def sobre(request):
-    return HttpResponse('sobre')
+def portifolio(request):
+    return HttpResponse('site_escola/pages/portifolio.html')

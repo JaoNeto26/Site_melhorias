@@ -7,84 +7,121 @@
     
     <style>
         /* Reset de estilos básico para garantir consistência */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/* Estilos para o corpo da página */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-}
+        /* Estilos para o corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            background-image: url('fundo3.jpg');
+            position: relative;
+        }
 
-/* Estilo para o cabeçalho */
-header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
+        /* Estilo para o cabeçalho */
+        header {
+            background-image: linear-gradient(to bottom right, #0E7BF0, #5B7BA7);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
 
-header h1 {
-    font-size: 2rem;
-}
+        header h1 {
+            font-size: 2rem;
+            text-align:cente
+        }
 
-/* Container principal */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
-/* Estilo para cada integrante da equipe */
-.team-member {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+        .containerdecima { /*cirei um container para deixar a fonte alinhada, mas os outros container não*/
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: center;
+            flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha se necessário */
+            justify-content: space-between; /* Distribui os itens igualmente ao longo do eixo principal */
+        }
+        /* Container principal */
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha se necessário */
+            justify-content: space-between; /* Distribui os itens igualmente ao longo do eixo principal */
+        }
 
-.team-member img {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
+        /* Estilo para cada integrante da equipe */
+        .team-member {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: calc(50% - 20px); /* 50% menos margem para criar uma margem entre as colunas */
+            display: flex;
+            align-items: center;
+        }
 
-.team-member h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #333;
-}
+        .team-member img {
+            width: 150px;
+            border-radius: 15%;
+            margin-right: 20px;
+        }
 
-.team-member p {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 15px;
-}
+        .team-member h2 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #022B65;
+        }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-}
+        .team-member p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 15px;
+            flex: 1; /* Ocupa o espaço restante */
+        }
 
-.social-links a {
-    display: inline-block;
-    margin: 0 10px;
-}
+        .social-links {
+            display: flex;
+        }
 
-.social-links img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-}
+        .social-links a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .social-links img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .back-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-button a {
+            text-decoration: none;
+            background-image: linear-gradient(to bottom right, #125196, #5B7BA7);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button :hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
+        
+        <div class="containerdecima">
             <h1>Portfólio da Equipe</h1>
         </div>
     </header>
@@ -92,37 +129,34 @@ header h1 {
     <main>
         <div class="container">
             <section class="team-member">
-                <img src="integrante1.jpg" alt="Integrante 1">
-                <h2>Nome do Integrante 1</h2>
-                <p>Descrição breve do integrante 1.</p>
-                <div class="social-links">
-                    <a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
-                    <a href="#" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
-                    <a href="#" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                <img src="integrante1.jpeg" alt="Integrante 1">
+                <div>
+                    <h2>Maycon Luan Azevedo de Morais</h2>
+                    <p>Olá, me chamo Maycon Luan Azevedo de Morais, um jovem de 13 anos, atualmente cursando o 7º ano da Escola de Ensino Fundamental Maurício Fernandes da Silva.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+                        <a href="#" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+                        <a href="#" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                    </div>
                 </div>
             </section>
 
             <section class="team-member">
-                <img src="integrante2.jpg" alt="Integrante 2">
-                <h2>Nome do Integrante 2</h2>
-                <p>Descrição breve do integrante 2.</p>
-                <div class="social-links">
-                    <a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
-                    <a href="#" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
-                    <a href="#" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                <img src="integrante2.jpeg" alt="Integrante 2">
+                <div>
+                    <h2>Estela Caroline Moreira</h2>
+                    <p>Olá, me chamo Estela Caroline Moreira, uma jovem de 12 anos, estou atualmente cursando o 7°ano da Escola De Ensino Fundamental Maurício Fernandes da Silva.<p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+                        <a href="#" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+                        <a href="#" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                    </div>
                 </div>
             </section>
+        </div>
 
-            <section class="team-member">
-                <img src="integrante3.jpg" alt="Integrante 3">
-                <h2>Nome do Integrante 3</h2>
-                <p>Descrição breve do integrante 3.</p>
-                <div class="social-links">
-                    <a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
-                    <a href="#" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
-                    <a href="#" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-                </div>
-            </section>
+        <div class="back-button">
+            <a href="javascript:history.back()">Voltar</a>
         </div>
     </main>
 </body>

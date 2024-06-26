@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sobre o Projeto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex; /* Utilizando flexbox */
+            align-items: center; /* Alinhar itens verticalmente */
+        }
+        .image-container {
+            flex: 0 0 40%; /* 40% de largura para a imagem */
+            margin-right: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .text-container {
+            flex: 1; /* O texto ocupa todo o espaço restante */
+        }
+    </style>
 </head>
 <body>
-
+    <header>
+        <h1 style="font-size: 36px;">Sobre o Projeto</h1>
+    </header>
+    <div class="container">
+        <div class="image-container">
+            <img src="caminho/para/imagem.jpg" alt="Descrição da imagem">
+        </div>
+        <div class="text-container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget felis ac nulla dapibus tempor. Curabitur vehicula, velit sed pellentesque egestas, leo ex tristique nisl, nec malesuada purus dui vel erat.</p>
+            <p>Proin ac tincidunt dui. Nunc fermentum nisi non mauris lobortis, ac laoreet velit placerat. In hac habitasse platea dictumst.</p>
+        </div>
+    </div>
 </body>
 </html>
+
